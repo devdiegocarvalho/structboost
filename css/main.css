@@ -18,6 +18,10 @@ header nav {
   gap: 3.2rem;
 }
 
+header .btn-mobile {
+  display: none;
+}
+
 header nav ul {
   display: flex;
   gap: 4rem;
@@ -42,6 +46,7 @@ header nav ul a:hover {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  display: none;
 }
 
 .s-hero::after {
@@ -102,6 +107,7 @@ header nav ul a:hover {
 
 .s-digital {
   padding-top: 12.8rem;
+  display: none;
 }
 
 .s-digital h3 {
@@ -119,6 +125,7 @@ header nav ul a:hover {
 
 .s-art-front {
   padding: 12.8rem 0;
+  display: none;
 }
 
 .s-art-front .title-text {
@@ -164,6 +171,7 @@ header nav ul a:hover {
 .s-newsletter {
   padding: 8.9rem 0;
   background-color: var(--pink-10);
+  display: none;
 }
 
 .s-newsletter .container {
@@ -185,6 +193,7 @@ header nav ul a:hover {
 
 footer {
   padding: 4.8rem 0;
+  display: none;
 }
 
 footer .main-area {
@@ -242,4 +251,33 @@ footer .main-area .right .item-nav ul li a:hover {
 footer .copy {
   color: var(--gray-600);
   letter-spacing: -0.48px;
+}
+
+/* Até monitores pequenos */
+@media (max-width: 1200px) {
+}
+
+/* Até tablets */
+@media (max-width: 991px) {
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+
+  header .btn-mobile {
+    display: block;
+  }
+}
+
+/* Até celulares */
+@media (max-width: 560px) {
+  header {
+    height: 7.2rem;
+  }
+
+  header .logo {
+    max-width: 16rem;
+  }
 }
