@@ -110,7 +110,6 @@ header nav ul a:hover {
 
 .s-digital {
   padding-top: 12.8rem;
-  display: none;
 }
 
 .s-digital h3 {
@@ -258,12 +257,29 @@ footer .copy {
 
 /* Até monitores pequenos */
 @media (max-width: 1200px) {
+  .s-digital {
+    padding-top: 6.8rem;
+  }
+  .s-digital ul {
+    gap: 3.2rem;
+    padding-bottom: 6.8rem;
+  }
+  .s-digital .info h6 {
+    font-size: 2rem;
+  }
+  .s-digital .info p {
+    font-size: 1.6rem;
+  }
 }
 
 /* Até tablets */
 @media (max-width: 991px) {
   .s-hero::after {
     height: 13rem;
+  }
+  .s-digital ul {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -329,5 +345,15 @@ footer .copy {
   }
   .s-hero::after {
     height: 22rem;
+  }
+  .s-digital {
+    padding-top: 8rem;
+  }
+  .s-digital ul {
+    padding-bottom: 8rem;
+    gap: 6.4rem;
+  }
+  .s-digital h3 {
+    font-size: 2.8rem;
   }
 }
