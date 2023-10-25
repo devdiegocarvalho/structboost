@@ -127,7 +127,6 @@ header nav ul a:hover {
 
 .s-art-front {
   padding: 12.8rem 0;
-  display: none;
 }
 
 .s-art-front .title-text {
@@ -270,6 +269,16 @@ footer .copy {
   .s-digital .info p {
     font-size: 1.6rem;
   }
+  .s-art-front {
+    padding: 6rem 0;
+  }
+  .s-art-front .all {
+    gap: 1.6rem;
+  }
+  .s-art-front .all .card-post:first-child,
+  .s-art-front .all .card-post:nth-child(2) {
+    grid-column: span 3;
+  }
 }
 
 /* Até tablets */
@@ -280,6 +289,32 @@ footer .copy {
   .s-digital ul {
     flex-direction: column;
     align-items: center;
+  }
+  .s-art-front .title-text {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  .title-text .left {
+    text-align: center;
+    max-width: 100%;
+  }
+  .title-text .left p {
+    max-width: 100%;
+    margin-top: 8px;
+    margin-bottom: 1.5rem;
+  }
+  .title-text .right {
+    max-width: 101%;
+    text-align: center;
+  }
+
+  .s-art-front .all {
+    grid-template-columns: 1fr;
+  }
+  .s-art-front .all .card-post:first-child,
+  .s-art-front .all .card-post:nth-child(2) {
+    grid-column: initial;
   }
 }
 
@@ -355,5 +390,36 @@ footer .copy {
   }
   .s-digital h3 {
     font-size: 2.8rem;
+  }
+  .s-art-front {
+    padding: 8rem 0;
+  }
+  .s-art-front .title-text h3 {
+    font-size: 2.8rem;
+    max-width: 22.7rem;
+    margin: 0 auto 0.16rem auto;
+  }
+  .s-art-front .title-text p {
+    font-size: 1.6rem;
+    margin-top: 0.8rem;
+  }
+
+  .s-art-front .title-text .left p {
+    margin-top: 1.6rem;
+  }
+  .card-post {
+    padding: 1.6rem;
+  }
+  .card-post .text h6 {
+    font-size: 1.8rem;
+  }
+  .card-post .text p {
+    font-size: 1.4rem;
+  }
+  .card-post .image {
+    margin-bottom: 5.4rem;
+  }
+  .s-art-front .all {
+    gap: 3.2rem;
   }
 }
